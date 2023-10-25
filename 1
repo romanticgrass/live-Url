@@ -1,0 +1,4 @@
+echo 'net.ipv6.conf.all.autoconf = 0 
+net.ipv6.conf.all.accept_ra = 0 
+net.ipv6.conf.eth0.autoconf = 0 
+net.ipv6. conf.eth0.accept_ra = 0' >> /etc/sysctl.conf && sysctl -p && systemctl networking restart
